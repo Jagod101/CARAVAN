@@ -22,5 +22,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Choice_Screen::class.java)
             startActivity(intent)
         }
+        //spotifybtn.setOnClickListener{
+        //    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("")))
+       //}
     }
 }
