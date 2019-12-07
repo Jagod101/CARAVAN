@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         />
     <Button
-        android:id="@+id/signupbtnsignuppage"
+        android:id="@+id/signupbtntosignuppage"
         android:text="Sign up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

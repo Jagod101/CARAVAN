@@ -18,23 +18,31 @@ class Sign_up_page : AppCompatActivity(){
         //take values from the sign up screen
         val usernamesignupfield = findViewById<EditText>(R.id.usernamesignupfield)
         val passwordsignupfield = findViewById<EditText>(R.id.passwordsignupfield)
-        val signupbtnsignuppage = findViewById<Button>(R.id.signupbtnsignuppage)
+        val signupbtosignuppage = findViewById<Button>(R.id.signupbtntosignuppage)
+        val backbtnsignuppage = findViewById<Button>(R.id.backbtnsignuppage)
 
         //handle button click
-        signupbtnsignuppage.setOnClickListener {
+        //sign up button
+        signupbtosignuppage.setOnClickListener {
             //Get texts from text edittexts
            val username = usernamesignupfield.text.toString()
            val password = passwordsignupfield.text.toString()
 
-            startActivity(Intent(this, MainActivity::class.java).apply {
+            startActivity(Intent(this, Choice_Screen::class.java).apply {
                 putExtra("usernamesignupfield", username)
                 putExtra("passwordsignupupfield", password)
             })
-            //intent to start activity
-            //var intent = Intent(thisMainActivity, Sign_up_page::class.java)
-            //intent.putExtra("usernamesignupfield", username)
-            //intent.putExtra("passwordsignupupfield", password)
-            //startActivity(intent)
+        }
+        //back button
+        backbtnsignuppage.setOnClickListener {
+            //Get texts from text edittexts
+            val username = usernamesignupfield.text.toString()
+            val password = passwordsignupfield.text.toString()
+
+            startActivity(Intent(this, MainActivity::class.java).apply{
+                putExtra("usernamesignupfield", username)
+                putExtra("passwordsignupupfield", password)
+            })
         }
     }
 }
