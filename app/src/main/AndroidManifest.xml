@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Sign_up_page"></activity>
+        <activity android:name=".Choice_Screen"></activity>
     </application>
 
 </manifest>

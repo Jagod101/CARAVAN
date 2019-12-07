@@ -26,6 +26,10 @@ class Sign_up_page : AppCompatActivity(){
            val username = usernamesignupfield.text.toString()
            val password = passwordsignupfield.text.toString()
 
+            startActivity(Intent(this, MainActivity::class.java).apply {
+                putExtra("usernamesignupfield", username)
+                putExtra("passwordsignupupfield", password)
+            })
             //intent to start activity
             //var intent = Intent(thisMainActivity, Sign_up_page::class.java)
             //intent.putExtra("usernamesignupfield", username)
