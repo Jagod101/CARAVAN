@@ -18,12 +18,12 @@ class Sign_up_page : AppCompatActivity(){
         //take values from the sign up screen
         val usernamesignupfield = findViewById<EditText>(R.id.usernamesignupfield)
         val passwordsignupfield = findViewById<EditText>(R.id.passwordsignupfield)
-        val signupbtosignuppage = findViewById<Button>(R.id.signupbtntosignuppage)
-        val backbtnsignuppage = findViewById<Button>(R.id.backbtnsignuppage)
+        val SignUpButton = findViewById<Button>(R.id.signupbtntosignuppage)
+        val BackBtn = findViewById<Button>(R.id.backbtnsignuppage)
 
         //handle button click
         //sign up button
-        signupbtosignuppage.setOnClickListener {
+        SignUpButton.setOnClickListener {
             //Get texts from text edittexts
            val username = usernamesignupfield.text.toString()
            val password = passwordsignupfield.text.toString()
@@ -34,7 +34,7 @@ class Sign_up_page : AppCompatActivity(){
             })
         }
         //back button
-        backbtnsignuppage.setOnClickListener {
+        BackBtn.setOnClickListener {
             //Get texts from text edittexts
             val username = usernamesignupfield.text.toString()
             val password = passwordsignupfield.text.toString()
