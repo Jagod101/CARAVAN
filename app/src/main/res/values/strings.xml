@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Caravan</string>
+    <string name="linktoSpotify">
+        <a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fopen.spotify.com%2Fartist%2F7mz6tB1Og2yzxP74wxDVrn">Sign up through Spotify</a>
+    </string>
 </resources>
