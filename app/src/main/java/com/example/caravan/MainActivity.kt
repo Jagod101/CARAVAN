@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         }
         spotifyLink.setOnClickListener {
             SpotifyService.connect(this) {
-                val intent = Intent(this, Choice_Screen::class.java)
+                val intent = Intent(this, PlayerActivity::class.java)
                 startActivity(intent)
             }
         }
