@@ -6,13 +6,9 @@ import android.widget.EditText
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.host_screen.*
+
 import com.google.firebase.firestore.DocumentReference
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import sun.jvm.hotspot.utilities.IntArray
+
 
 
 

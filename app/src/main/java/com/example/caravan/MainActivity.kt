@@ -49,14 +49,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.loginin_screen)
 
-        val email = findViewById<TextView>(R.id.usernamefield)
+        val email = findViewById<TextView>(R.id.emailfield)
         val password = findViewById<TextView>(R.id.passwordText)
         signupbtntosignuppage.setOnClickListener{
             val intent = Intent(this, Sign_up_page::class.java)
             startActivity(intent)
         }
         loginbtn.setOnClickListener{
-            sigInWithEmail(email.toString(), password.toString())
+            sigInWithEmail(email.text.toString().trim(), password.text.toString().trim())
 
 
         }
