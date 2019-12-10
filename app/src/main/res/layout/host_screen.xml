@@ -9,13 +9,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Randomize Video" />
+        android:text="Begin Video" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Button 2" />
+        android:text="Vote To Skip" />
 
     <TextView
         android:layout_width="wrap_content"

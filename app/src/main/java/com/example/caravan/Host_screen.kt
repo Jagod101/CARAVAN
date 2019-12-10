@@ -25,7 +25,7 @@ class Host_screen : AppCompatActivity() {
         val lobbyCode = findViewById<TextView>(R.id.lobbycode)
 
         if(user !=null){
-            keys.add(user.uid);
+            keys.add(user.uid)
             lobby.put("users", keys)
 
 

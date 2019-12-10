@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 
     //check for user
     //private fun getUserName() = intent.extras?.get("username").toString().trim()
+//    companion object {
+//        val CLIENT_ID: String = "0ac0be38dfa24683a2f3150bbbe4811e"
+//        val REDIRECT_URI : String = "com.example.caravan://callback"
+//    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         auth = FirebaseAuth.getInstance()

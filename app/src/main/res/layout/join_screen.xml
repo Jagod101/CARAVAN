@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Join_screen">
-
+    android:gravity="center"
+    android:orientation="vertical">
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/insert"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="you are on the join screen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385"
-        app:layout_constraintHorizontal_bias="0.605"
+        android:layout_height="30dp"
+        android:text="Insert Lobby Code:"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="20dp"
         />
+    <EditText
+        android:id="@+id/lobbycode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""/>
+    <Button
+        android:id="@+id/joinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Submit Code" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Vote to Skip" />
+
+
+
+</LinearLayout>
